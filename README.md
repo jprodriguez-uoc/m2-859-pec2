@@ -124,12 +124,12 @@ Mediante este gráfico se puede ver que los rangos de empresas pequeñas crecen 
 
 # Referencias
 
-https://adrian-cidre.com/posts/001_population_spain_map/
-https://ropenspain.github.io/mapSpain/articles/x02_mapasesp.html
-https://r-spatial.github.io/sf/#installing
-https://colorspace.r-forge.r-project.org/articles/ggplot2_color_scales.html
-https://spectdata.com/index.php/2018/10/25/how-to-use-ggplot-to-plot-pie-charts-on-a-map/
-https://rpubs.com/Data_Artifex/1114554
-https://www.rdocumentation.org/packages/scatterpie/versions/0.1.8/topics/geom_scatterpie
-https://cran.r-project.org/web/packages/scatterpie/vignettes/scatterpie.html
-https://r-graph-gallery.com/connected_scatterplot_ggplot2.html
+* https://adrian-cidre.com/posts/001_population_spain_map/
+* https://ropenspain.github.io/mapSpain/articles/x02_mapasesp.html
+* https://r-spatial.github.io/sf/#installing
+* https://colorspace.r-forge.r-project.org/articles/ggplot2_color_scales.html
+* https://spectdata.com/index.php/2018/10/25/how-to-use-ggplot-to-plot-pie-charts-on-a-map/
+* https://rpubs.com/Data_Artifex/1114554
+* https://www.rdocumentation.org/packages/scatterpie/versions/0.1.8/topics/geom_scatterpie
+* https://cran.r-project.org/web/packages/scatterpie/vignettes/scatterpie.html
+* https://r-graph-gallery.com/connected_scatterplot_ggplot2.html
