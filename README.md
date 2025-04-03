@@ -2,9 +2,7 @@
 
 ## Descripción
 
-Creado por Charles Dupin en 1826 para ilustrar la alfabetización en Francia por provincias; 
-muestra áreas geográficas divididas en regiones que están coloreadas, 
-uniendo datos espaciales y datos estadísticos que representan la variable estudiada agregada en cada región.
+Creado por Charles Dupin en 1826 para ilustrar la alfabetización en Francia por provincias; muestra áreas geográficas divididas en regiones que están coloreadas, uniendo datos espaciales y datos estadísticos que representan la variable estudiada agregada en cada región.
 
 Entre sus beneficios se encuentran:
 * Destacar patrones espaciales
@@ -14,14 +12,14 @@ Entre sus beneficios se encuentran:
 
 Entre sus limitaciones destaca no poder comparar con exactitud los valores o que las regiones más grandes aparezcan más enfatizadas.
 Es importante procesar los datos y normalizarlos para producir mapas de densidad ya que no tiene sentido comparar directamente valores absolutos entre áreas de diferente tamaño o población.
-También es crítico utilizar una paleta de colores continuos, poner una leyenda e incluso usar mapas con hexbin (celdas exagonales) si hay regiones de tamaños muy dispares.
+También es crítico utilizar una paleta de colores continuos, poner una leyenda e incluso usar mapas con hexbin (celdas hexagonales) si hay regiones de tamaños muy dispares.
 
 ## Datos de entrada
 
 * Variable espacial con las diferentes regiones y sus limites
 * Variable numérica para determinar el color de cada región del mapa
 
-## Datos seleccionados
+## Datos seleccionados (carpeta 1)
 
 El objetivo es determinar la importancia de las personas inactivas en las diferentes provincias de España. Teniendo en cuenta la diferencia tanto en tamaño como en población, normalizaremos el dato con la población ocupada de cada provincia.
 La fuente de los datos es el Instituto Nacionalde Estadística:
@@ -35,10 +33,8 @@ El dataset contiene para cada provincia y trimestre dentro del rango de años se
 
 ![Choropleth map - Personas inactivas VS personas ocupadas](g1-choropleth-map.svg)
 
-Hemos utilizado la escala de colores hcl.colors Temps para expresar el ratio entre inactivos y ocupados,
-con un color más rojizo a medida que aumenta el valor.
-Si consideramos que las personas ocupadas producen los recursos que mantienten a las demás,
-esta visualización nos ayuda a identificar zonas donde esto puede resultar una carga mayor y donde pueden ser necesarias políticas específicas.
+Hemos utilizado la escala de colores hcl.colors Temps para expresar el ratio entre inactivos y ocupados, con un color más rojizo a medida que aumenta el valor.
+Si consideramos que las personas ocupadas producen los recursos que mantienten a las demás, esta visualización nos ayuda a identificar zonas donde esto puede resultar una carga mayor y donde pueden ser necesarias políticas específicas.
 
 # Técnica Grupo II - Proportional Symbol Map
 
@@ -47,8 +43,7 @@ esta visualización nos ayuda a identificar zonas donde esto puede resultar una 
 Se atribuye a Henry Drury el primer mapa que intenta representar puntos proporcionales en un mapa de 1838 del tráfico de crarga en Irlanda. El Censo de Gran Bretaña de 1851 incluye mapas donde las ciudades tiene un tamaño proporcional a su población.
 En algunos casos se aumenta el número de variables utilizando un símbolo de tipo tarta, donde el tamaño muestra un valor total y los segmentos las partes que lo forman.
 
-Entre sus limitaciones destacan el tamaño mínimo o máximo del conjunto de datos,
-los requisitos sobre el diseño del símbolo para que se pueda apreciar el tamaño, comparar con los demás símbolos e identificar fácilmente las formas, y el hecho de no poder mostrar valores negativos o variables categóricas.
+Entre sus limitaciones destacan el tamaño mínimo o máximo del conjunto de datos, los requisitos sobre el diseño del símbolo para que se pueda apreciar el tamaño, comparar con los demás símbolos e identificar fácilmente las formas, y el hecho de no poder mostrar valores negativos o variables categóricas.
 
 Debido a esto se considera que sólo las variables de tipo ratio son apropiadas para este tipo de representación.
 
@@ -59,7 +54,7 @@ https://en.wikipedia.org/wiki/Proportional_symbol_map#:~:text=A%20proportional%2
 * Variable espacial con los puntos a representar
 * Variable numérica para determinar el tamaño del símbolo de cada punto. También pueden ser varias variables que sumadas formen un total y puedan representarse como tarta (porciones)
 
-## Datos seleccionados
+## Datos seleccionados (carpeta 2)
 
 Se ha seleccionado el stock de empresas y estrato de asalariados de Año 2022, publicado por el INE.
 
@@ -77,7 +72,7 @@ Para normalizar los datos y determinar el tamaño del símbolo tarta utilizaremo
 
 ![Mapa de símbolos proporcionales con el número de empresas por habitante y porcentaje según tamaño](g2-proportional_symbol_map.svg)
 
-En este caso hemos superpuesto sobre el mapa el símbolo de tarta con tamaño según el ratio entre empresas y habitantes y composición según el número de empleados
+En este caso hemos superpuesto sobre el mapa el símbolo de tarta con tamaño según el ratio entre empresas y habitantes y composición según el número de empleados.
 Se puede apreciar que las tartas en Madrid, Catalunya y Baleares son mayores que en el resto; en estas comunidades hay un ratio de empresas superior.
 Aunque es difícil apreciar los tamaños exactos de cada porción de cada símbolo, sí se puede apreciar que las empresas con menos de 5 empleados son abrumadora mayoría en todas las comunidades.
 
@@ -102,9 +97,10 @@ Esta visualización tiene limitaciones respecto otra visualizaciones más simple
 * Variable temporal
 * Una o dos variables numéricas (en caso que representar la relación entre ambas variables)
 
-## Datos seleccionados
+## Datos seleccionados (carpeta 3)
 
 Hemos utilizado la estadística de Empresas Inscritas en la Seguridad Social, concretamente el número de empresas y el número de trabajadores por tamaño de empresa, desde 2012 a 2024, con los segmentos:
+
 * 1 a 2 trabajadores
 * 3 a 5 trabajadores
 * 6 a 9 trabajadores
