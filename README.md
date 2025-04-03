@@ -33,7 +33,7 @@ El dataset contiene para cada provincia y trimestre dentro del rango de años se
 
 ## Representación
 
-[Choropleth map - Personas inactivas VS personas ocupadas](g1-choropleth-map.svg)
+![Choropleth map - Personas inactivas VS personas ocupadas](g1-choropleth-map.svg)
 
 Hemos utilizado la escala de colores hcl.colors Temps para expresar el ratio entre inactivos y ocupados,
 con un color más rojizo a medida que aumenta el valor.
@@ -75,7 +75,7 @@ Para normalizar los datos y determinar el tamaño del símbolo tarta utilizaremo
 
 ## Representación
 
-[Mapa de símbolos proporcionales con el número de empresas por habitante y porcentaje según tamaño](g2-proportional_symbol_map.svg)
+![Mapa de símbolos proporcionales con el número de empresas por habitante y porcentaje según tamaño](g2-proportional_symbol_map.svg)
 
 En este caso hemos superpuesto sobre el mapa el símbolo de tarta con tamaño según el ratio entre empresas y habitantes y composición según el número de empleados
 Se puede apreciar que las tartas en Madrid, Catalunya y Baleares son mayores que en el resto; en estas comunidades hay un ratio de empresas superior.
@@ -119,7 +119,7 @@ Nos interesa contestar a la pregunta de cómo contribuye al crecimiento del empl
 
 ## Representación
 
-[Crecimiento de las empresas según su tamaño](g3-connected_scatterplots.svg)
+![Crecimiento de las empresas según su tamaño](g3-connected_scatterplots.svg)
 
 
 La visualización muestra una rejilla con el diagrama de puntos conectados para cada tamaño de empresa. Cada punto tiene una etiqueta indicando el año al que corresponde, de forma que podemos seguir la evolución.
